@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+
+.cabeçalho {
+    background-color: red;   /* Cor da faixa */
+    color: white;            /* Cor do texto */
+    text-align: center;      /* Centraliza o texto */
+    padding: 20px;           /* Espaço interno */
+    font-size: 24px;         /* Tamanho da fonte */
+    font-weight: bold;       /* Negrito */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contatos {
+  text-align: center;
+  margin: 40px 0;
+  font-family: sans-serif;
+}
+
+.contatos h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+}
+
