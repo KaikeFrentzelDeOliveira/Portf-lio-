@@ -1,48 +1,247 @@
-body{
-    background-color: black;
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.cabeçalho {
-    background-color: red;   /* Cor da faixa */
-    color: white;            /* Cor do texto */
-    text-align: center;      /* Centraliza o texto */
-    padding: 20px;           /* Espaço interno */
-    font-size: 24px;         /* Tamanho da fonte */
-    font-weight: bold;       /* Negrito */
-    font-family: Arial, Helvetica, sans-serif;
+body, html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000; /* preto sólido */
+  color: #FF6F00; /* laranja Itaú */
 }
 
-.contatos {
+.container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #050505;
+  border-right: 2px solid #FF6F00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid #FF6F00;
+  box-shadow: 0 0 15px #FF6F00;
+  object-fit: cover;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+.profile-pic:hover {
+  box-shadow: 0 0 35px #FF6F00;
+  transform: scale(1.05);
+}
+
+.sidebar h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid #FF6F00;
+  padding-bottom: 8px;
+  width: 100%;
   text-align: center;
-  margin: 40px 0;
-  font-family: sans-serif;
+  color: #FF6F00;
 }
 
-.contatos h2 {
-  margin-bottom: 20px;
-  color: #333;
+.social-nav {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  width: 100%;
 }
 
-.whatsapp-btn {
+.social-btn {
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 50%;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  transition: background 0.3s;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+  width: 52px;
+  height: 52px;
+  background-color: #111;
 }
 
-.whatsapp-btn:hover {
-  background-color: #1ebe5d;
+.social-btn img {
+  width: 28px;
+  height: 28px;
 }
 
-.whatsapp-icon {
-  width: 22px;
-  height: 22px;
+/* Cores e bordas específicas laranja Itaú */
+.social-btn.email {
+  border-color: #FF6F00;
+}
+
+.social-btn.email:hover {
+  box-shadow: 0 0 15px 5px #FF6F00;
+  transform: scale(1.15);
+  border-color: #FF6F00;
+}
+
+.social-btn.whatsapp {
+  border-color: #FF6F00;
+}
+
+.social-btn.whatsapp:hover {
+  box-shadow: 0 0 15px 5px #FF6F00;
+  transform: scale(1.15);
+  border-color: #FF6F00;
+}
+
+.social-btn.linkedin {
+  border-color: #FF6F00;
+}
+
+.social-btn.linkedin:hover {
+  box-shadow: 0 0 15px 5px #FF6F00;
+  transform: scale(1.15);
+  border-color: #FF6F00;
+}
+
+.social-btn.github {
+  border-color: #FF6F00;
+}
+
+.social-btn.github:hover {
+  box-shadow: 0 0 15px 5px #FF6F00;
+  transform: scale(1.15);
+  border-color: #FF6F00;
+}
+
+/* Conteúdo Principal */
+.content {
+  padding: 50px 60px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Seções */
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-left: 6px solid #FF6F00;
+  padding-left: 14px;
+  color: #FF6F00;
+}
+
+/* Projeto */
+.project-card {
+  border: 2px solid #FF6F00;
+  border-radius: 12px;
+  padding: 22px 28px;
+  box-shadow: 0 0 10px #FF6F00;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 25px 5px #FF6F00;
+  transform: translateY(-6px);
+}
+
+.project-card h3 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Currículo */
+.resume-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.resume-card {
+  flex: 1 1 30%;
+  border: 2px solid #FF6F00;
+  border-radius: 12px;
+  padding: 20px 26px;
+  box-shadow: 0 0 8px #FF6F00;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+  min-width: 220px;
+}
+
+.resume-card:hover {
+  box-shadow: 0 0 25px 6px #FF6F00;
+  background-color: rgba(255, 111, 0, 0.1);
+}
+
+.resume-card h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Animação neon pulse */
+@keyframes pulseNeon {
+  0%, 100% {
+    box-shadow: 0 0 6px 3px #FF6F00;
+  }
+  50% {
+    box-shadow: 0 0 15px 6px #FF6F00;
+  }
+}
+
+/* Scroll custom */
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: #FF6F00aa;
+  border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    height: auto;
+  }
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 10px;
+    border-right: none;
+    border-bottom: 2px solid #FF6F00;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+  .sidebar h1 {
+    display: none;
+  }
+  .content {
+    padding: 25px 20px;
+  }
+  .resume-cards {
+    flex-direction: column;
+  }
+  .resume-card {
+    flex: 1 1 auto;
+    min-width: auto;
+  }
 }
 
