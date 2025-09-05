@@ -12,7 +12,7 @@ body, html {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: #000; /* preto sólido */
-  color: #FF6F00; /* laranja Itaú */
+  color: #ffffff; /* branco */
 }
 
 .container {
@@ -25,7 +25,7 @@ body, html {
 /* Sidebar */
 .sidebar {
   background: #050505;
-  border-right: 2px solid #FF6F00;
+  border-right: 2px solid #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,14 +37,14 @@ body, html {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 2px solid #FF6F00;
-  box-shadow: 0 0 15px #FF6F00;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 15px #ffffff;
   object-fit: cover;
   transition: box-shadow 0.4s ease, transform 0.3s ease;
   cursor: pointer;
 }
 .profile-pic:hover {
-  box-shadow: 0 0 35px #FF6F00;
+  box-shadow: 0 0 35px #ffffff;
   transform: scale(1.05);
 }
 
@@ -52,11 +52,11 @@ body, html {
   font-weight: 700;
   font-size: 2.5rem;
   letter-spacing: 0.1em;
-  border-bottom: 2px solid #FF6F00;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 8px;
   width: 100%;
   text-align: center;
-  color: #FF6F00;
+  color: #ffffff;
 }
 
 .social-nav {
@@ -85,45 +85,45 @@ body, html {
   height: 28px;
 }
 
-/* Cores e bordas específicas laranja Itaú */
+/* Botões com branco */
 .social-btn.email {
-  border-color: #FF6F00;
+  border-color: #ffffff;
 }
 
 .social-btn.email:hover {
-  box-shadow: 0 0 15px 5px #FF6F00;
+  box-shadow: 0 0 15px 5px #ffffff;
   transform: scale(1.15);
-  border-color: #FF6F00;
+  border-color: #ffffff;
 }
 
 .social-btn.whatsapp {
-  border-color: #FF6F00;
+  border-color: #ffffff;
 }
 
 .social-btn.whatsapp:hover {
-  box-shadow: 0 0 15px 5px #FF6F00;
+  box-shadow: 0 0 15px 5px #ffffff;
   transform: scale(1.15);
-  border-color: #FF6F00;
+  border-color: #ffffff;
 }
 
 .social-btn.linkedin {
-  border-color: #FF6F00;
+  border-color: #ffffff;
 }
 
 .social-btn.linkedin:hover {
-  box-shadow: 0 0 15px 5px #FF6F00;
+  box-shadow: 0 0 15px 5px #ffffff;
   transform: scale(1.15);
-  border-color: #FF6F00;
+  border-color: #ffffff;
 }
 
 .social-btn.github {
-  border-color: #FF6F00;
+  border-color: #ffffff;
 }
 
 .social-btn.github:hover {
-  box-shadow: 0 0 15px 5px #FF6F00;
+  box-shadow: 0 0 15px 5px #ffffff;
   transform: scale(1.15);
-  border-color: #FF6F00;
+  border-color: #ffffff;
 }
 
 /* Conteúdo Principal */
@@ -140,23 +140,23 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 30px;
-  border-left: 6px solid #FF6F00;
+  border-left: 6px solid #ffffff;
   padding-left: 14px;
-  color: #FF6F00;
+  color: #ffffff;
 }
 
 /* Projeto */
 .project-card {
-  border: 2px solid #FF6F00;
+  border: 2px solid #ffffff;
   border-radius: 12px;
   padding: 22px 28px;
-  box-shadow: 0 0 10px #FF6F00;
+  box-shadow: 0 0 10px #ffffff;
   transition: box-shadow 0.4s ease, transform 0.3s ease;
   cursor: default;
 }
 
 .project-card:hover {
-  box-shadow: 0 0 25px 5px #FF6F00;
+  box-shadow: 0 0 25px 5px #ffffff;
   transform: translateY(-6px);
 }
 
@@ -174,18 +174,18 @@ h2 {
 
 .resume-card {
   flex: 1 1 30%;
-  border: 2px solid #FF6F00;
+  border: 2px solid #ffffff;
   border-radius: 12px;
   padding: 20px 26px;
-  box-shadow: 0 0 8px #FF6F00;
+  box-shadow: 0 0 8px #ffffff;
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
   cursor: default;
   min-width: 220px;
 }
 
 .resume-card:hover {
-  box-shadow: 0 0 25px 6px #FF6F00;
-  background-color: rgba(255, 111, 0, 0.1);
+  box-shadow: 0 0 25px 6px #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .resume-card h3 {
@@ -196,10 +196,10 @@ h2 {
 /* Animação neon pulse */
 @keyframes pulseNeon {
   0%, 100% {
-    box-shadow: 0 0 6px 3px #FF6F00;
+    box-shadow: 0 0 6px 3px #ffffff;
   }
   50% {
-    box-shadow: 0 0 15px 6px #FF6F00;
+    box-shadow: 0 0 15px 6px #ffffff;
   }
 }
 
@@ -208,7 +208,7 @@ h2 {
   width: 8px;
 }
 .content::-webkit-scrollbar-thumb {
-  background-color: #FF6F00aa;
+  background-color: #ffffffaa;
   border-radius: 4px;
 }
 
@@ -224,7 +224,7 @@ h2 {
     justify-content: space-around;
     padding: 20px 10px;
     border-right: none;
-    border-bottom: 2px solid #FF6F00;
+    border-bottom: 2px solid #ffffff;
   }
   .profile-pic {
     width: 100px;
@@ -244,4 +244,3 @@ h2 {
     min-width: auto;
   }
 }
-
